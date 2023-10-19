@@ -11,6 +11,13 @@
 #include <limits.h>
 #include <fcntl.h>
 #include <errno.h>
+#include <stdbool.h>
+
+void display_prompt(void);
+void jet_print(const char *my_format);
+void rd_command(char *command, size_t size);
+void execute_command(const char *command);
+
 
 #define READ_BUF_SIZE 1024
 #define WRITE_BUF_SIZE 1024
